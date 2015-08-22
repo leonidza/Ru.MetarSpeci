@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E2A98E62-0647-44C8-A5D0-6127E0DA40C2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ru.MetarSpeci</RootNamespace>
+    <AssemblyName>Ru.MetarSpeci</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataTypes\AirportData.cs" />
+    <Compile Include="DataTypes\AutoData.cs" />
+    <Compile Include="DataTypes\CavokData.cs" />
+    <Compile Include="DataTypes\CloudinessData.cs" />
+    <Compile Include="DataTypes\Data.cs" />
+    <Compile Include="DataTypes\DayTimeData.cs" />
+    <Compile Include="DataTypes\HorizontalVisibilityData.cs" />
+    <Compile Include="DataTypes\VisibilityWithDirectionData.cs" />
+    <Compile Include="DataTypes\NosigData.cs" />
+    <Compile Include="DataTypes\NswData.cs" />
+    <Compile Include="DataTypes\PrefixData.cs" />
+    <Compile Include="DataTypes\PressureData.cs" />
+    <Compile Include="DataTypes\QfeData.cs" />
+    <Compile Include="DataTypes\ReWeatherData.cs" />
+    <Compile Include="DataTypes\RmkData.cs" />
+    <Compile Include="DataTypes\RunwayInformationData.cs" />
+    <Compile Include="DataTypes\RunwaySnocloData.cs" />
+    <Compile Include="DataTypes\RunwayVisibilityData.cs" />
+    <Compile Include="DataTypes\TemperatureData.cs" />
+    <Compile Include="DataTypes\TempoBecmgGroupData.cs" />
+    <Compile Include="DataTypes\TempoBecmgGroupsData.cs" />
+    <Compile Include="DataTypes\TimeData.cs" />
+    <Compile Include="DataTypes\VisibilityData.cs" />
+    <Compile Include="DataTypes\WeatherData.cs" />
+    <Compile Include="DataTypes\WindAngleLimitsData.cs" />
+    <Compile Include="DataTypes\WindData.cs" />
+    <Compile Include="DataTypes\WindShearData.cs" />
+    <Compile Include="Decoders\Abstract\Decoder.cs" />
+    <Compile Include="Decoders\AiroptDecoder.cs" />
+    <Compile Include="Decoders\AutoDecoder.cs" />
+    <Compile Include="Decoders\CavokDecoder.cs" />
+    <Compile Include="Decoders\CloudinessDecoder.cs" />
+    <Compile Include="Decoders\DataDecoder.cs" />
+    <Compile Include="Decoders\DayTimeDecoder.cs" />
+    <Compile Include="Decoders\HorizontalVisibilityDecoder.cs" />
+    <Compile Include="Decoders\HorizontalVisibilityWithDirectionDecoder.cs" />
+    <Compile Include="Decoders\NosigDecoder.cs" />
+    <Compile Include="Decoders\NswDecoder.cs" />
+    <Compile Include="Decoders\PrefixDecoder.cs" />
+    <Compile Include="Decoders\PressureDecoder.cs" />
+    <Compile Include="Decoders\QfeDecoder.cs" />
+    <Compile Include="Decoders\ReWeatherDecoder.cs" />
+    <Compile Include="Decoders\RmkDecoder.cs" />
+    <Compile Include="Decoders\RunwayInformationDecoder.cs" />
+    <Compile Include="Decoders\RunwaySnocloDecoder.cs" />
+    <Compile Include="Decoders\RunwayVisibilityDecoder.cs" />
+    <Compile Include="Decoders\TemperatureDecoder.cs" />
+    <Compile Include="Decoders\TempoBecmgGroupDecoder.cs" />
+    <Compile Include="Decoders\TempoBecmgGroupsDecoder.cs" />
+    <Compile Include="Decoders\TimeDecoder.cs" />
+    <Compile Include="Decoders\VisibilityDecoder.cs" />
+    <Compile Include="Decoders\WeatherDecoder.cs" />
+    <Compile Include="Decoders\WindAngleLimitsDecoder.cs" />
+    <Compile Include="Decoders\WindDecoder.cs" />
+    <Compile Include="Decoders\WindShearDecoder.cs" />
+    <Compile Include="DecodingException.cs" />
+    <Compile Include="Enums\BecmgTempo.cs" />
+    <Compile Include="Enums\Cloudiness.cs" />
+    <Compile Include="Enums\CloudsType.cs" />
+    <Compile Include="MetarSpeciDescriptionAttirubeExtensions.cs" />
+    <Compile Include="MetarSpeciDescriptionAttribute.cs" />
+    <Compile Include="Enums\Direction.cs" />
+    <Compile Include="Enums\MoreOrLess.cs" />
+    <Compile Include="Enums\Position.cs" />
+    <Compile Include="Enums\Prefix.cs" />
+    <Compile Include="Enums\PressureUnit.cs" />
+    <Compile Include="Enums\RunwayBrakingPerformance.cs" />
+    <Compile Include="Enums\RunwayContamination.cs" />
+    <Compile Include="Enums\RunwaySurface.cs" />
+    <Compile Include="Enums\TimePrefix.cs" />
+    <Compile Include="Enums\TrendChanges.cs" />
+    <Compile Include="Enums\WeakOrStrong.cs" />
+    <Compile Include="Enums\WeatherPhenomenon.cs" />
+    <Compile Include="Enums\WindUnit.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="airports.xml" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
